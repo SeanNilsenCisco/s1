@@ -6,25 +6,13 @@ public class MovieDetails extends BaseBO {
     // MovieDetailsId
     private  int MovieDetailsId;
 
-    // MovieId
-    private  int MovieId;
-
-    // MovieTitle
-    private  String MovieTitle;
-
-    // PersonId
-    private int PersonId;
-
-    // FirstName
-    private  String FirstName;
-
-    // LastName
-    private  String LastName;
-
+    //Movie
+    private Movie movie;
+    // Person
+    private Person person;
 
     // RoleId
-
-    private int RoleId;
+    private Role role;
 
     // MovieRole
     private String MovieRole;
@@ -58,60 +46,12 @@ public class MovieDetails extends BaseBO {
         return this.MovieDetailsId;
     }
 
-    public void setMovieId(int movieId) {
-        this.MovieId = movieId;
+    public void setRole(Role role) {
+        this.role = role;
     }
 
-    public int getMovieId() {
-        return this.MovieId;
-    }
-
-    public void setMovieTitle(String movieTitle) {
-        this.MovieTitle = movieTitle;
-    }
-
-    public String getMovieTitle() {
-        return this.MovieTitle;
-    }
-
-    public void setPersonId(int personId) {
-        this.PersonId = personId;
-    }
-
-    public int getPersonId() {
-        return this.PersonId;
-    }
-
-    public void setFirstName(String firstName) {
-        this.FirstName = firstName;
-    }
-
-    public String getFirstName() {
-        return this.FirstName;
-    }
-
-    public void setLastName(String lastName) {
-        this.LastName = lastName;
-    }
-
-    public String getLastName() {
-        return this.LastName;
-    }
-
-    public void setRoleId(int roleId) {
-        this.RoleId = roleId;
-    }
-
-    public int getRoleId() {
-        return this.RoleId;
-    }
-
-    public void setMovieRole(String movieRole) {
-        this.MovieRole = movieRole;
-    }
-
-    public String getMovieRole() {
-        return this.MovieRole;
+    public Role getRole() {
+        return this.role;
     }
 
     public void setProductionMovieId(int productionMovieId){
@@ -152,6 +92,22 @@ public class MovieDetails extends BaseBO {
 
     public String getRating() {
         return this.Rating;
+    }
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
+    }
+
+    public Movie getMovie() {
+        return movie;
+    }
+
+    public void setMovie(Movie movie) {
+        this.movie = movie;
     }
     // endregion
 
