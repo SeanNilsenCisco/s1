@@ -1,39 +1,26 @@
 package Exercise1.bo;
 
+import java.util.List;
+
 public class MovieDetails extends BaseBO {
 
     // region PROPERTIES
     // MovieDetailsId
-    private  int MovieDetailsId;
-
+    private int MovieDetailsId;
     //Movie
     private Movie movie;
     // Person
     private Person person;
-
-    // RoleId
+    // Role
     private Role role;
-
-    // MovieRole
-    private String MovieRole;
-
-    // ProductionMovieId
-    private  int ProductionMovieId;
-
-    // ProdCoId = production company Id
-    private  int ProdCoId;
-
-    // Company = production company
-    private String Company;
-
+    // ProdMovie
+    private List<ProdMovie> prodMovie;
     // RatingsId
     private int RatingsId;
-
     // Rating
     private String Rating;
 
-
-//    endregion
+    //    endregion
 
 
     // region GETTERS / SETTERS
@@ -52,30 +39,6 @@ public class MovieDetails extends BaseBO {
 
     public Role getRole() {
         return this.role;
-    }
-
-    public void setProductionMovieId(int productionMovieId){
-        this.ProductionMovieId = productionMovieId;
-    }
-
-    public int getProductionMovieId() {
-        return this.ProductionMovieId;
-    }
-
-    public void setProdCoId(int prodCoId) {
-        this.ProdCoId = prodCoId;
-    }
-
-    public int getProdCoId() {
-        return this.ProdCoId;
-    }
-
-    public void setCompany(String company) {
-        this.Company = company;
-    }
-
-    public String getCompany() {
-        return this.Company;
     }
 
     public void setRatingsId(int ratingsId) {
@@ -109,6 +72,15 @@ public class MovieDetails extends BaseBO {
     public void setMovie(Movie movie) {
         this.movie = movie;
     }
+
+    public List<ProdMovie> getProdMovie() {
+        return prodMovie;
+    }
+
+    public void setProdMovie(List<ProdMovie> prodMovie) {
+        this.prodMovie = prodMovie;
+    }
+
     // endregion
 
 
